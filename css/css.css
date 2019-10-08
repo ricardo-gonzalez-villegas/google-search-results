@@ -1,4 +1,4 @@
-p, li, a, span, header, article{
+p, li, a, span, header, article, span, h3{
     font-family: Arial, sans-serif;
 }
 a{
@@ -140,37 +140,34 @@ a{
 }
 
 #tools a{
-    padding: 4px 11px;
+    padding: 4px 11px !important;
     border: 1px solid transparent;
     border-radius: 3px;
-
-    
 }
 #tools a:hover{
     background-color: rgba(95, 99,104, .1);
     border: 1px solid rgba(95, 99, 104, .3);
 }
 /** end navbar **/
-body{
-    height: 1000px;
-    
-}
 
 #results{
     height: 43px;
     margin-left: 150px;
     color: #70757a;
-    font-size: 14px;
 }
 
 #results span{
     position: relative;
-    top: 12px;
+    top: 18px;
+    font-size: 14px;
 }
 
 .container{
+    margin-top: 20px;
     margin-left: 150px; 
+    width: 600px;
 }
+
 
 .title{
     color: #1a0dab;
@@ -179,11 +176,15 @@ body{
     display: block;
 }
 
+.title:hover{
+    text-decoration: underline;
+}
+
 .link{
+    margin-top: 3px;
     color: #006621;
     line-height: 22px;
     font-size: 16px;
-    text-align: left;  
 }
 
 .summary{
@@ -191,4 +192,26 @@ body{
     color: #545454;
     font-size: 14px;
     line-height: 22px;
+}
+
+.container #related{
+    font-size: 20px;
+    color: #222222;
+}
+
+#related-navbar{
+    margin-top: 20px;
+}
+#left{
+    display: block;
+    float: left;
+}
+
+#right{
+    display: block;
+    float: right;
+}
+
+#pages li{
+    display: inline-block;
 }
